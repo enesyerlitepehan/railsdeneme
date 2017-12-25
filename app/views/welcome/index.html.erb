@@ -1,0 +1,12 @@
+<center><h1> <%= t('hello') %></h1></center>
+<center><h2>Açılış Sayfasına Hoşgeldiniz</h2></center>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3">
+    <button class="btn btn-danger"><%= link_to(t('Üye Kayıt Formu'), new_user_registration_path) %></button><hr/>
+    <button class="btn btn-success"> <%= link_to(t('Üye Girişi Yap'), new_user_session_path) %></button><hr/>
+    <button class="btn btn-warning"> <%=link_to t('Giriş Yapmadan Devam Et'), posts_path, class:"navbar-brand"%></button>
+    </div>
+</div>
